@@ -1,0 +1,203 @@
+car_models_with_brands:
+  - {brand: Toyota, model: Camry}
+  - {brand: Honda, model: Civic}
+  - {brand: Ford, model: F-150}
+  - {brand: Chevrolet, model: Silverado}
+  - {brand: BMW, model: 3 Series}
+  - {brand: Mercedes-Benz, model: C-Class}
+  - {brand: Volkswagen, model: Golf}
+  - {brand: Audi, model: A4}
+  - {brand: Nissan, model: Altima}
+  - {brand: Hyundai, model: Sonata}
+  - {brand: Toyota, model: Corolla}
+  - {brand: Honda, model: Accord}
+  - {brand: Ford, model: Explorer}
+  - {brand: Chevrolet, model: Equinox}
+  - {brand: BMW, model: 5 Series}
+  - {brand: Mercedes-Benz, model: E-Class}
+  - {brand: Volkswagen, model: Jetta}
+  - {brand: Audi, model: Q5}
+  - {brand: Nissan, model: Rogue}
+  - {brand: Hyundai, model: Elantra}
+  - {brand: Toyota, model: RAV4}
+  - {brand: Honda, model: Fit}
+  - {brand: Ford, model: Escape}
+  - {brand: Chevrolet, model: Malibu}
+  - {brand: BMW, model: X5}
+  - {brand: Mercedes-Benz, model: GLC}
+  - {brand: Volkswagen, model: Passat}
+  - {brand: Audi, model: A6}
+  - {brand: Nissan, model: Sentra}
+  - {brand: Hyundai, model: Tucson}
+  - {brand: Toyota, model: Highlander}
+  - {brand: Honda, model: CR-V}
+  - {brand: Ford, model: Fusion}
+  - {brand: Chevrolet, model: Colorado}
+  - {brand: BMW, model: 7 Series}
+  - {brand: Mercedes-Benz, model: GLE}
+  - {brand: Volkswagen, model: Tiguan}
+  - {brand: Audi, model: Q7}
+  - {brand: Nissan, model: Murano}
+  - {brand: Hyundai, model: Santa Fe}
+  - {brand: Toyota, model: Tacoma}
+  - {brand: Honda, model: HR-V}
+  - {brand: Ford, model: Mustang}
+  - {brand: Chevrolet, model: Traverse}
+  - {brand: BMW, model: X3}
+  - {brand: Mercedes-Benz, model: A-Class}
+  - {brand: Volkswagen, model: Atlas}
+  - {brand: Audi, model: A8}
+  - {brand: Nissan, model: Maxima}
+  - {brand: Hyundai, model: Kona}
+  - {brand: Toyota, model: 4Runner}
+  - {brand: Honda, model: Pilot}
+  - {brand: Ford, model: Edge}
+  - {brand: Chevrolet, model: Impala}
+  - {brand: BMW, model: X7}
+  - {brand: Mercedes-Benz, model: S-Class}
+  - {brand: Volkswagen, model: Golf GTI}
+  - {brand: Audi, model: Q3}
+  - {brand: Nissan, model: Frontier}
+  - {brand: Hyundai, model: Accent}
+  - {brand: Toyota, model: Tundra}
+  - {brand: Honda, model: Odyssey}
+  - {brand: Ford, model: EcoSport}
+  - {brand: Chevrolet, model: Tahoe}
+  - {brand: BMW, model: X1}
+  - {brand: Mercedes-Benz, model: GLA}
+  - {brand: Volkswagen, model: Beetle}
+  - {brand: Audi, model: A3}
+  - {brand: Nissan, model: Juke}
+  - {brand: Hyundai, model: Veloster}
+  - {brand: Toyota, model: Prius}
+  - {brand: Honda, model: Insight}
+  - {brand: Ford, model: Expedition}
+  - {brand: Chevrolet, model: Camaro}
+  - {brand: BMW, model: 2 Series}
+  - {brand: Mercedes-Benz, model: CLA}
+  - {brand: Volkswagen, model: Golf R}
+  - {brand: Audi, model: Q5 Sportback}
+  - {brand: Nissan, model: Armada}
+  - {brand: Hyundai, model: Venue}
+  - {brand: Toyota, model: Sequoia}
+  - {brand: Honda, model: Passport}
+  - {brand: Ford, model: Ranger}
+  - {brand: Chevrolet, model: Suburban}
+  - {brand: BMW, model: 4 Series}
+  - {brand: Mercedes-Benz, model: GLB}
+  - {brand: Volkswagen, model: Arteon}
+  - {brand: Audi, model: RS Q8}
+  - {brand: Nissan, model: Versa}
+  - {brand: Hyundai, model: Santa Cruz}
+  - {brand: Toyota, model: Land Cruiser}
+  - {brand: Honda, model: Clarity}
+  - {brand: Ford, model: Bronco}
+  - {brand: Chevrolet, model: Blazer}
+  - {brand: BMW, model: 8 Series}
+  - {brand: Mercedes-Benz, model: Maybach S-Class}
+  - {brand: Volkswagen, model: ID.4}
+  - {brand: Audi, model: A7}
+  - {brand: Nissan, model: Kicks}
+  - {brand: Hyundai, model: Ioniq}
+  - {brand: Toyota, model: C-HR}
+  - {brand: Honda, model: S2000}
+  - {brand: Ford, model: Maverick}
+  - {brand: Chevrolet, model: Bolt EV}
+  - {brand: BMW, model: Z4}
+  - {brand: Mercedes-Benz, model: GLS}
+  - {brand: Volkswagen, model: Jetta GLI}
+  - {brand: Audi, model: S3}
+  - {brand: Nissan, model: 370Z}
+  - {brand: Hyundai, model: Palisade}
+  - {brand: Toyota, model: Sienna}
+  - {brand: Honda, model: Prelude}
+  - {brand: Ford, model: Mach-E}
+  - {brand: Chevrolet, model: Corvette}
+  - {brand: BMW, model: M2}
+  - {brand: Mercedes-Benz, model: EQS}
+  - {brand: Volkswagen, model: Taos}
+  - {brand: Audi, model: A5}
+  - {brand: Nissan, model: NV200}
+  - {brand: Hyundai, model: Nexo}
+  - {brand: Toyota, model: 86}
+  - {brand: Honda, model: Passport}
+  - {brand: Ford, model: Bronco Sport}
+  - {brand: Chevrolet, model: Silverado 1500}
+  - {brand: BMW, model: M3}
+  - {brand: Mercedes-Benz, model: C-Class Coupe}
+  - {brand: Volkswagen, model: Passat GT}
+  - {brand: Audi, model: S4}
+  - {brand: Nissan, model: NV Cargo}
+  - {brand: Hyundai, model: Santa Fe Hybrid}
+  - {brand: Toyota, model: Yaris}
+  - {brand: Honda, model: CR-Z}
+  - {brand: Ford, model: Transit Connect}
+  - {brand: Chevrolet, model: Silverado 2500HD}
+  - {brand: BMW, model: M4}
+  - {brand: Mercedes-Benz, model: C-Class Cabriolet}
+  - {brand: Volkswagen, model: Tiguan R}
+  - {brand: Audi, model: S5}
+  - {brand: Nissan, model: Pathfinder}
+  - {brand: Hyundai, model: Tucson Hybrid}
+  - {brand: Toyota, model: GR Supra}
+  - {brand: Honda, model: Element}
+  - {brand: Ford, model: Super Duty}
+  - {brand: Chevrolet, model: Silverado 3500HD}
+  - {brand: BMW, model: M5}
+  - {brand: Mercedes-Benz, model: C-Class Sedan}
+  - {brand: Volkswagen, model: Taos R}
+  - {brand: Audi, model: SQ5}
+  - {brand: Nissan, model: Titan}
+  - {brand: Hyundai, model: Ioniq 5}
+  - {brand: Toyota, model: Mirai}
+  - {brand: Honda, model: Ridgeline}
+  - {brand: Ford, model: Chassis Cab}
+  - {brand: Chevrolet, model: Trailblazer}
+  - {brand: BMW, model: X6}
+  - {brand: Mercedes-Benz, model: E-Class Coupe}
+  - {brand: Volkswagen, model: ID. Buzz}
+  - {brand: Audi, model: RS 3}
+  - {brand: Nissan, model: NV Passenger}
+  - {brand: Hyundai, model: Santa Fe XL}
+  - {brand: Toyota, model: Prius Prime}
+  - {brand: Honda, model: Insight}
+  - {brand: Ford, model: E-Series}
+  - {brand: Chevrolet, model: Trax}
+  - {brand: BMW, model: X4}
+  - {brand: Mercedes-Benz, model: E-Class Cabriolet}
+  - {brand: Volkswagen, model: Jetta GLI}
+  - {brand: Audi, model: RS 6}
+  - {brand: Nissan, model: NV200 Compact Cargo}
+  - {brand: Hyundai, model: Sonata Hybrid}
+  - {brand: Toyota, model: C-HR}
+  - {brand: Honda, model: Fit}
+  - {brand: Ford, model: F-450}
+  - {brand: Chevrolet, model: City Express}
+  - {brand: BMW, model: X2}
+  - {brand: Mercedes-Benz, model: CLS}
+  - {brand: Volkswagen, model: Atlas Cross Sport}
+  - {brand: Audi, model: S6}
+  - {brand: Nissan, model: Leaf}
+  - {brand: Hyundai, model: Venue}
+  - {brand: Toyota, model: Tacoma}
+  - {brand: Honda, model: HR-V}
+  - {brand: Ford, model: Mustang}
+  - {brand: Chevrolet, model: Traverse}
+  - {brand: BMW, model: X3}
+  - {brand: Mercedes-Benz, model: A-Class}
+  - {brand: Volkswagen, model: Golf R}
+  - {brand: Audi, model: Q5 Sportback}
+  - {brand: Nissan, model: Armada}
+  - {brand: Hyundai, model: Santa Fe}
+  - {brand: Toyota, model: Tacoma}
+  - {brand: Honda, model: HR-V}
+  - {brand: Ford, model: Mustang}
+  - {brand: Chevrolet, model: Traverse}
+  - {brand: BMW, model: X3}
+  - {brand: Mercedes-Benz, model: A-Class}
+  - {brand: Volkswagen, model: Golf R}
+  - {brand: Audi, model: Q5 Sportback}
+  - {brand: Nissan, model: Armada}
+  - {brand: Hyundai, model: Santa Fe}
+
+
