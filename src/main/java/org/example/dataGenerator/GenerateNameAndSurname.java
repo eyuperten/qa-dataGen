@@ -9,69 +9,61 @@ import java.util.Map;
 import java.util.Random;
 
 public class GenerateNameAndSurname {
-    public static String generateRandomNameAndSurname() {
+    private static ArrayList<String> isimler;
+    private static ArrayList<String> soyisimler;
+
+    static {
         try {
-            // YAML dosyasını oku
+            // İsimler için YAML dosyasını oku ve isimleri al
             Yaml yaml = new Yaml();
             FileInputStream inputStream = new FileInputStream("/Users/mobven/Desktop/dataGen-WebApi/src/main/resources/trNames.yaml");
-            Map<String, ArrayList<String>> data = yaml.load(inputStream);
+            Map<String, ArrayList<String>> nameData = yaml.load(inputStream);
+            isimler = nameData.get("İsimler");
 
-            // İsimler ve soyisimleri ayrı listelerden al
-            ArrayList<String> isimler = data.get("İsimler");
-            ArrayList<String> soyisimler = data.get("Soyisimler");
-
-            // Rastgele bir isim ve soyisim seç
-            Random rand = new Random();
-            String randomIsim = isimler.get(rand.nextInt(isimler.size()));
-            String randomSoyisim = soyisimler.get(rand.nextInt(soyisimler.size()));
-
-            // Seçilen isim ve soyisimi birleştirip döndür
-            return randomIsim + " " + randomSoyisim;
+            // Soyisimler için YAML dosyasını oku ve soyisimleri al
+            inputStream = new FileInputStream("/Users/mobven/Desktop/dataGen-WebApi/src/main/resources/trSurnames.yaml");
+            Map<String, ArrayList<String>> surnameData = yaml.load(inputStream);
+            soyisimler = surnameData.get("Soyisimler");
         } catch (FileNotFoundException e) {
-            System.err.println("trNames.yaml dosyası bulunamadı.");
+            System.err.println("YAML dosyaları bulunamadı.");
+        }
+    }
+
+    public static String generateRandomNameAndSurname() {
+        if (isimler == null || soyisimler == null) {
             return null;
         }
+
+        // Rastgele bir isim ve soyisim seç
+        Random rand = new Random();
+        String randomIsim = isimler.get(rand.nextInt(isimler.size()));
+        String randomSoyisim = soyisimler.get(rand.nextInt(soyisimler.size()));
+
+        // Seçilen isim ve soyisimi birleştirip döndür
+        return randomIsim + " " + randomSoyisim;
     }
 
     public static String generateOnlyName() {
-        try {
-            // YAML dosyasını oku
-            Yaml yaml = new Yaml();
-            FileInputStream inputStream = new FileInputStream("/Users/mobven/Desktop/dataGen-WebApi/src/main/resources/trNames.yaml");
-            Map<String, ArrayList<String>> data = yaml.load(inputStream);
-
-            // İsimleri ayrı bir listeden al
-            ArrayList<String> isimler = data.get("İsimler");
-
-            // Rastgele bir isim seç
-            Random rand = new Random();
-            String randomIsim = isimler.get(rand.nextInt(isimler.size()));
-
-            return randomIsim;
-        } catch (FileNotFoundException e) {
-            System.err.println("trNames.yaml dosyası bulunamadı.");
+        if (isimler == null) {
             return null;
         }
+
+        // Rastgele bir isim seç
+        Random rand = new Random();
+        String randomIsim = isimler.get(rand.nextInt(isimler.size()));
+
+        return randomIsim;
     }
 
     public static String generateOnlySurname() {
-        try {
-            // YAML dosyasını oku
-            Yaml yaml = new Yaml();
-            FileInputStream inputStream = new FileInputStream("/Users/mobven/Desktop/dataGen-WebApi/src/main/resources/trNames.yaml");
-            Map<String, ArrayList<String>> data = yaml.load(inputStream);
-
-            // Soyisimleri ayrı bir listeden al
-            ArrayList<String> soyisimler = data.get("Soyisimler");
-
-            // Rastgele bir soyisim seç
-            Random rand = new Random();
-            String randomSoyisim = soyisimler.get(rand.nextInt(soyisimler.size()));
-
-            return randomSoyisim;
-        } catch (FileNotFoundException e) {
-            System.err.println("trNames.yaml dosyası bulunamadı.");
+        if (soyisimler == null) {
             return null;
         }
+
+        // Rastgele bir soyisim seç
+        Random rand = new Random();
+        String randomSoyisim = soyisimler.get(rand.nextInt(soyisimler.size()));
+
+        return randomSoyisim;
     }
 }

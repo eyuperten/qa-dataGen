@@ -10,7 +10,7 @@ public class RandomPassportGenerator {
 
         int randomNumber = random.nextInt(100000,999999);
         String domain = getRandomElement(passportDomain);
-        String passport = domain + " " + randomNumber;
+        String passport = domain + randomNumber;
 
         return passport;
 
