@@ -125,6 +125,7 @@ public class Main {
                         System.out.printf("MESLEK:          %s\n", meslek);
                         System.out.printf("Araba:           %s\n", cars);
 
+
                         System.out.printf("-----------------***********--------------------\n");
 
 

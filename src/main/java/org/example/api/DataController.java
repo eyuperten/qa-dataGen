@@ -308,6 +308,27 @@ public class DataController {
             @RequestParam(name = "includeCar", required = false, defaultValue = "false") boolean includeCar,
             @RequestParam(name = "carKeyName", required = false, defaultValue = "car") String carKeyName,
 
+            @RequestParam(name = "includeFTeam", required = false, defaultValue = "false") boolean includeFTeam,
+            @RequestParam(name = "fTeamKeyName", required = false, defaultValue = "team") String fTeamKeyName,
+
+            @RequestParam(name = "includeIpv4", required = false, defaultValue = "false") boolean includeIpv4,
+            @RequestParam(name = "ipv4KeyName", required = false, defaultValue = "ipv4") String ipv4KeyName,
+
+            @RequestParam(name = "includeIpv6", required = false, defaultValue = "false") boolean includeIpv6,
+            @RequestParam(name = "ipv6KeyName", required = false, defaultValue = "ipv6") String ipv6KeyName,
+
+            @RequestParam(name = "includeMac", required = false, defaultValue = "false") boolean includeMac,
+            @RequestParam(name = "macKeyName", required = false, defaultValue = "mac") String macKeyName,
+
+            @RequestParam(name = "includeLocation", required = false, defaultValue = "false") boolean includeLocation,
+            @RequestParam(name = "locationKeyName", required = false, defaultValue = "location") String locationKeyName,
+
+            @RequestParam(name = "includeMovieGen", required = false, defaultValue = "false") boolean includeMovieGen,
+            @RequestParam(name = "movieGenKeyName", required = false, defaultValue = "movieType") String movieGenKeyName,
+
+            @RequestParam(name = "includeMovieName", required = false, defaultValue = "false") boolean includeMovieName,
+            @RequestParam(name = "movieNameKeyName", required = false, defaultValue = "movieName") String movieNameKeyName,
+
             @RequestParam(name = "repeat", required = false, defaultValue = "1") int repeat ) {
 
 
@@ -466,6 +487,55 @@ public class DataController {
                     dataMap.put("car", GenerateCar.generateRandomCar());
                 }
             }
+            if (includeFTeam) {
+                if (fTeamKeyName != null) {
+                    dataMap.put(fTeamKeyName, RandomFootballTeamGenerator.RandomTeam());
+                } else {
+                    dataMap.put("team", RandomFootballTeamGenerator.RandomTeam());
+                }
+            }
+
+            if (includeIpv4) {
+                if (ipv4KeyName != null) {
+                    dataMap.put(ipv4KeyName, RandomIPGenerator.generateRandomIPv4());
+                } else {
+                    dataMap.put("ipv4", RandomIPGenerator.generateRandomIPv4());
+                }
+            }
+
+            if (includeIpv6) {
+                if (ipv6KeyName != null) {
+                    dataMap.put(ipv6KeyName, RandomIPGenerator.generateRandomIPv6());
+                } else {
+                    dataMap.put("ipv6", RandomIPGenerator.generateRandomIPv6());
+                }
+            }
+
+            if (includeMac) {
+                if (macKeyName != null) {
+                    dataMap.put(macKeyName, RandomIPGenerator.generateRandomMAC());
+                } else {
+                    dataMap.put("mac", RandomIPGenerator.generateRandomMAC());
+                }
+            }
+
+            if (includeLocation) {
+                if (locationKeyName != null) {
+                    dataMap.put(locationKeyName,RandomLocation.getLocation());
+                } else {
+                    dataMap.put("location",RandomLocation.getLocation());
+                }
+            }
+
+
+            if (includeMovieGen) {
+                if (movieGenKeyName != null) {
+                    dataMap.put(movieGenKeyName, RandomMovieGenerator.generateRandomMovieGenre());
+                } else {
+                    dataMap.put("movieType", RandomMovieGenerator.generateRandomMovieGenre());
+                }
+            }
+
 
             dataList.add(dataMap); // Add the data map to the list
         }
