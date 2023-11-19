@@ -16,7 +16,7 @@ public class RandomFootballTeamGenerator {
         try {
             // YAML dosyasını oku
             Yaml yaml = new Yaml();
-            FileInputStream inputStream = new FileInputStream("/Users/mobven/Desktop/dataGen-WebApi/src/main/resources/trFootballTeams.yaml");
+            FileInputStream inputStream = new FileInputStream("trFootballTeams.yaml");
             Map<String, ArrayList<String>> teamsData = yaml.load(inputStream);
 
             teams = teamsData.get("teams");

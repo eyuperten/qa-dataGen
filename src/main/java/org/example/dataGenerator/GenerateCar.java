@@ -13,7 +13,7 @@ public class GenerateCar {
         try {
             // YAML dosyasını oku
             Yaml yaml = new Yaml();
-            FileInputStream inputStream = new FileInputStream("/Users/volkan/Desktop/data-backend/target/classes/trCars.yaml");
+            FileInputStream inputStream = new FileInputStream("trCars.yaml");
             Map<String, ArrayList<Map<String, String>>> data = yaml.load(inputStream);
 
             ArrayList<Map<String, String>> carsList = data.get("car_models_with_brands");

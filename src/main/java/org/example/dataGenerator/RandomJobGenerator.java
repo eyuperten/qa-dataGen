@@ -15,7 +15,7 @@ public class RandomJobGenerator {
         try {
             // YAML dosyasını oku
             Yaml yaml = new Yaml();
-            FileInputStream inputStream = new FileInputStream("/Users/volkan/Desktop/data-backend/target/classes/.yaml");
+            FileInputStream inputStream = new FileInputStream("trJobs.yaml");
             Map<String, ArrayList<String>> data = yaml.load(inputStream);
 
             // Meslekleri ayrı bir listeden al

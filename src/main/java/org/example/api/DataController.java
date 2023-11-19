@@ -366,7 +366,7 @@ public class DataController {
             }
             if (includeSoyAd) {
                 if (soyadKeyName != null) {
-                    dataMap.put(soyadKeyName, GenerateNameAndSurname.generateOnlyName());
+                    dataMap.put(soyadKeyName, GenerateNameAndSurname.generateOnlySurname());
                 } else {
                     dataMap.put("soyAd", GenerateNameAndSurname.generateOnlySurname());
                 }

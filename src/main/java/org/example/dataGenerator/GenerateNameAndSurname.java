@@ -16,12 +16,12 @@ public class GenerateNameAndSurname {
         try {
             // İsimler için YAML dosyasını oku ve isimleri al
             Yaml yaml = new Yaml();
-            FileInputStream inputStream = new FileInputStream("/Users/mobven/Desktop/dataGen-WebApi/src/main/resources/trNames.yaml");
+            FileInputStream inputStream = new FileInputStream("trNames.yaml");
             Map<String, ArrayList<String>> nameData = yaml.load(inputStream);
             isimler = nameData.get("İsimler");
 
             // Soyisimler için YAML dosyasını oku ve soyisimleri al
-            inputStream = new FileInputStream("/Users/mobven/Desktop/dataGen-WebApi/src/main/resources/trSurnames.yaml");
+            inputStream = new FileInputStream("trSurnames.yaml");
             Map<String, ArrayList<String>> surnameData = yaml.load(inputStream);
             soyisimler = surnameData.get("Soyisimler");
         } catch (FileNotFoundException e) {

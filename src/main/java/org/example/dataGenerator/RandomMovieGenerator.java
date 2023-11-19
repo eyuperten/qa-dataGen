@@ -14,7 +14,7 @@ public class RandomMovieGenerator {
     static {
         try {
             Yaml yaml = new Yaml();
-            FileInputStream inputStream = new FileInputStream("/Users/mobven/Desktop/dataGen-WebApi/src/main/resources/trMovies.yaml");
+            FileInputStream inputStream = new FileInputStream("trMovies.yaml");
             Map<String, ArrayList<String>> nameData = yaml.load(inputStream);
             movies = nameData.get("Movies");
 

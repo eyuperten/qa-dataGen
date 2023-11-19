@@ -12,7 +12,7 @@ public class RandomCities {
         try {
             // YAML dosyasını oku
             Yaml yaml = new Yaml();
-            FileInputStream inputStream = new FileInputStream("/Users/volkan/Desktop/data-backend/target/classes/trCities.yaml");
+            FileInputStream inputStream = new FileInputStream("trCities.yaml");
             Map<Integer, String> plakaSehirMap = yaml.load(inputStream);
 
             // Rasgele bir plaka numarası seç
