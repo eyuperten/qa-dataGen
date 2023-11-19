@@ -39,3 +39,9 @@ IntelliJ IDEA kullanarak bir JAR dosyası olarak nasıl alabiliriz?:
 -Gerekli yapılandırmaları yapın ve "OK" düğmesine tıklayın.
 -Proje penceresinde, oluşturulan JAR dosyasını seçin ve sağ tıklayarak "Build" seçeneğini seçin. Bu, JAR dosyanızı derler ve oluşturur.
 -Derleme işlemi tamamlandığında, oluşturulan JAR dosyasını projenizin kök dizininde veya istediğiniz bir konumda bulabilirsiniz.
+
+Dockerda çalıştırmak içim; 
+
+docker build -t springdemo .  
+docker run -p 8000:8080 springdemo //örnek run
+
